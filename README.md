@@ -6,13 +6,6 @@ This project is intentionally minimal, readable, and crafted to showcase strong 
 
 ---
 
-# 🚀 Live Demo
-
-**▶ https://YOUR_GITHUB_USERNAME.github.io/minimal-responsive-calculator/**  
-*(replace YOUR_GITHUB_USERNAME after deploying via GitHub Pages)*
-
----
-
 # ✨ Features
 
 ### 🔢 Core Calculator Functions
