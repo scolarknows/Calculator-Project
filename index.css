@@ -1,0 +1,122 @@
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #111;
+            padding: 10px;
+        }
+
+        .calculator {
+            width: 100%;
+            max-width: 450px;
+            background: #444;
+            border-radius: 16px;
+            border: 1px solid grey;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .display {
+            padding: 20px;
+            text-align: right;
+            background: #111;
+        }
+
+        .display input {
+            width: 100%;
+            border: none;
+            background: transparent;
+            color: #fff;
+            font-size: 2.2rem;
+            text-align: right;
+            outline: none;
+            padding: 10px 0;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: #333;
+            padding: 1px;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            border: none;
+            background: #444;
+            color: #fff;
+            cursor: default;
+            transition: background 0.2s;
+        }
+
+        button:active {
+            background: #555;
+        }
+
+        button.operator {
+            background: #f39c12;
+            font-weight: 600;
+        }
+
+        button.operator:active {
+            background: #e67e22;
+        }
+
+        button.equals {
+            background: #27ae60;
+        }
+
+        button.equals:active {
+            background: #219a52;
+        }
+
+        button.clear {
+            background: #c0392b;
+        }
+
+        button.clear:active {
+            background: #a93226;
+        }
+
+        button.zero {
+            grid-column: span 2;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .calculator {
+                max-width: 100%;
+                border-radius: 12px;
+            }
+
+            .display input {
+                font-size: 2rem;
+            }
+
+            button {
+                padding: 18px;
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .display input {
+                font-size: 1.8rem;
+            }
+
+            button {
+                padding: 16px;
+                font-size: 1.1rem;
+            }
+        }
